@@ -11,7 +11,7 @@ export default function Pricing() {
             entro 24 ore.
           </p>
           <Button
-            type="primary"
+            type="secondary"
             href="https://wa.me/393453506693"
             target="_blank"
             rel="noopener noreferrer"
