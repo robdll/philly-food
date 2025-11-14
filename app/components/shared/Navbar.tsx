@@ -1,0 +1,78 @@
+'use client'
+
+import { useState } from 'react'
+import Link from 'next/link'
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const navLinks = [
+    { href: '#home', label: 'Home' },
+    { href: '#eventi', label: 'Eventi & Catering' },
+    { href: '#noleggio', label: 'Noleggio Truck' },
+    { href: '#chi-siamo', label: 'Chi Siamo' },
+    { href: '#faq', label: 'FAQ' },
+    { href: '#contatti', label: 'Contatti' },
+  ]
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b-4 border-text shadow-neobrutal">
+      {/* Drippy top edge */}
+      <div className="absolute -top-4 left-0 right-0 h-4 drippy-shape bg-white"></div>
+      
+      <div className="container mx-auto px-4 py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <Link href="#home" className="font-brush text-2xl md:text-3xl font-bold text-text hover:scale-105 transition-transform">
+            PHILLY FOOD
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="font-badang text-lg hover:text-primary-red transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden p-2 border-2 border-text rounded-neobrutal shadow-neobrutal bg-white"
+            aria-label="Toggle menu"
+          >
+            <div className="w-6 h-6 flex flex-col justify-center gap-1">
+              <span className={`block h-0.5 bg-text transition-all ${isOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+              <span className={`block h-0.5 bg-text transition-all ${isOpen ? 'opacity-0' : ''}`}></span>
+              <span className={`block h-0.5 bg-text transition-all ${isOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+            </div>
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="md:hidden mt-4 pb-4 border-t-4 border-text">
+            <div className="flex flex-col gap-4 pt-4">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="font-badang text-lg hover:text-primary-red transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
+  )
+}
+

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary-red: #EC5B67;
+  --color-primary-gold: #EFC856;
+  --color-text: #1A1919;
+  --color-white: #FFFEFE;
+
+  /* Font Families */
+  --font-badang: 'Badang Italic', cursive;
+  --font-brush: 'Brush Up Too', cursive;
+  --font-family-sans: 'Work Sans', sans-serif;
+
+  /* Border Radius */
+  --radius-neobrutal: 12px;
+  --radius-neobrutal-lg: 20px;
+
+  /* Box Shadows */
+  --shadow-neobrutal: 4px 4px 0px 0px #1A1919;
+  --shadow-neobrutal-lg: 6px 6px 0px 0px #1A1919;
+  --shadow-neobrutal-red: 4px 4px 0px 0px #EC5B67;
+  --shadow-neobrutal-gold: 4px 4px 0px 0px #EFC856;
+}
+
+@layer base {
+  /* Custom fonts - add these files to /public/fonts/ */
+  @font-face {
+    font-family: 'Badang Italic';
+    src: url('/fonts/Badang-Italic.woff2') format('woff2'),
+         url('/fonts/Badang-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Brush Up Too';
+    src: url('/fonts/Brush-Up-Too.woff2') format('woff2'),
+         url('/fonts/Brush-Up-Too.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-text;
+    font-family: var(--font-family-sans);
+  }
+}
+
+@layer components {
+  .drippy-shape {
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 85%,
+      95% 90%,
+      85% 88%,
+      75% 92%,
+      65% 89%,
+      55% 93%,
+      45% 90%,
+      35% 94%,
+      25% 91%,
+      15% 95%,
+      5% 92%,
+      0% 100%
+    );
+  }
+
+  .drippy-shape-bottom {
+    clip-path: polygon(
+      0% 0%,
+      5% 8%,
+      15% 5%,
+      25% 9%,
+      35% 6%,
+      45% 10%,
+      55% 7%,
+      65% 11%,
+      75% 8%,
+      85% 12%,
+      95% 9%,
+      100% 0%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  .card-neobrutal {
+    @apply rounded-neobrutal-lg border-4 border-text shadow-neobrutal bg-white p-6 transition-all duration-200;
+  }
+
+  .card-neobrutal:hover {
+    @apply translate-x-1 translate-y-1 scale-[1.02] shadow-neobrutal-lg;
+  }
+
+  .section-title {
+    font-family: var(--font-brush);
+    @apply text-5xl md:text-6xl lg:text-7xl font-bold text-text mb-8;
+  }
+
+  .fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
