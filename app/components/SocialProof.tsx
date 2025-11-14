@@ -1,6 +1,8 @@
+import Image from 'next/image'
+
 export default function SocialProof() {
   const logos = [
-    { name: 'Gardaland', placeholder: 'Gardaland' },
+    { name: 'Gardaland', image: '/images/brand_1.png' },
     { name: 'Party Like a Deejay', placeholder: 'Party Like a Deejay' },
     { name: 'Brand 1', placeholder: 'Brand 1' },
     { name: 'Brand 2', placeholder: 'Brand 2' },
@@ -19,9 +21,19 @@ export default function SocialProof() {
               key={index}
               className="flex items-center justify-center w-32 h-16 md:w-40 md:h-20 bg-white rounded-neobrutal border-2 border-text/20 shadow-neobrutal opacity-60 hover:opacity-100 transition-opacity"
             >
-              <span className="font-sans font-bold text-text/40 text-sm md:text-base">
-                {logo.placeholder}
-              </span>
+              {logo.image ? (
+                <Image
+                  src={logo.image}
+                  alt={logo.name}
+                  width={132}
+                  height={66}
+                  className="object-contain max-w-full max-h-full"
+                />
+              ) : (
+                <span className="font-sans font-bold text-text/40 text-sm md:text-base">
+                  {logo.placeholder}
+                </span>
+              )}
             </div>
           ))}
         </div>
