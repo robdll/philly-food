@@ -27,7 +27,7 @@ export default function HowItWorks() {
   ]
 
   return (
-    <section className="py-16 md:py-24 bg-text/5">
+    <section className="py-16 md:py-24 bg-primary-gold">
       <div className="container mx-auto px-4">
         <h2 className="section-title text-center mb-12">
           Come funziona

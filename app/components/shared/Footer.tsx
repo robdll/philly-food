@@ -3,7 +3,7 @@ import Button from './Button'
 
 export default function Footer() {
   return (
-    <footer className="bg-text text-white py-12 mt-20">
+    <footer className="bg-text text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo & Description */}

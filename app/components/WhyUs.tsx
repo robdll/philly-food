@@ -19,7 +19,7 @@ export default function WhyUs() {
   ]
 
   return (
-    <section id="chi-siamo" className="py-16 md:py-24 bg-white">
+    <section id="chi-siamo" className="py-16 md:py-24 bg-primary-red">
       <div className="container mx-auto px-4">
         <h2 className="section-title text-center mb-12">
           Perché scegliere Philly Food

@@ -3,7 +3,7 @@ import Button from './shared/Button'
 
 export default function Hero() {
   return (
-    <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24 bg-white relative overflow-hidden">
+    <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24 bg-primary-red relative overflow-hidden">
       {/* Drippy shapes at top */}
       <div className="absolute top-0 left-0 right-0 h-20 drippy-shape bg-primary-gold opacity-20"></div>
       
@@ -21,7 +21,7 @@ export default function Hero() {
               Il gusto che unisce le persone nei tuoi eventi
             </p>
             <Button
-              type="primary"
+              type="secondary"
               href="https://wa.me/393453506693"
               target="_blank"
               rel="noopener noreferrer"

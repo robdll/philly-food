@@ -8,7 +8,7 @@ export default function SocialProof() {
   ]
 
   return (
-    <section className="py-12 bg-text/5">
+    <section className="py-12 bg-primary-gold">
       <div className="container mx-auto px-4">
         <p className="text-center font-sans text-sm text-text/60 mb-8 uppercase tracking-wider">
           Si fidano di noi

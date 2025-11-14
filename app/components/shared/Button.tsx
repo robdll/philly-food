@@ -29,6 +29,7 @@ export default function Button({
     border-4 border-text
     shadow-neobrutal-lg
     disabled:opacity-50 disabled:cursor-not-allowed
+    tracking-[3px]
   `
 
   const primaryStyles = `
