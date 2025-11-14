@@ -37,7 +37,7 @@ export default function Hero() {
           <div className="relative fade-up">
             <div className="relative w-full h-[400px] md:h-[500px] rounded-neobrutal-lg border-4 border-text shadow-neobrutal-lg overflow-hidden">
               <Image
-                src="https://placehold.co/800x600/png?text=Food+Truck"
+                src="/images/hero.png"
                 alt="Philly Food Truck"
                 fill
                 className="object-cover"

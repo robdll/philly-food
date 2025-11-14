@@ -14,7 +14,7 @@ export default function UseCases() {
       ],
       description:
         'Rendi il tuo evento speciale con il gusto autentico dei nostri panini. Perfetto per matrimoni, compleanni e celebrazioni private.',
-      image: 'https://placehold.co/600x400/png?text=Feste+Private',
+      image: '/images/private.png',
     },
     {
       title: 'Eventi aziendali e team building',
@@ -25,7 +25,7 @@ export default function UseCases() {
       ],
       description:
         "Sorprendi i tuoi dipendenti con un'esperienza culinaria unica. Ideale per team building, meeting aziendali e eventi corporate.",
-      image: 'https://placehold.co/600x400/png?text=Eventi+Aziendali',
+      image: '/images/companies.png',
     },
     {
       title: 'Festival e fiere',
@@ -36,7 +36,7 @@ export default function UseCases() {
       ],
       description:
         'Porta il gusto di Philadelphia ai tuoi eventi pubblici. Perfetto per festival, fiere, sagre e manifestazioni di piazza.',
-      image: 'https://placehold.co/600x400/png?text=Festival',
+      image: '/images/festival.png',
     },
     {
       title: 'Noleggio truck per brand o operatori food',
@@ -47,7 +47,7 @@ export default function UseCases() {
       ],
       description:
         'Noleggia i nostri food truck per il tuo brand o attività. Soluzione ideale per operatori del settore food e marketing esperienziale.',
-      image: 'https://placehold.co/600x400/png?text=Noleggio+Truck',
+      image: '/images/rent.png',
     },
   ]
 
@@ -64,7 +64,7 @@ export default function UseCases() {
         <div className="hidden md:grid md:grid-cols-2 gap-8">
           {useCases.map((useCase, index) => (
             <div key={index} className="card-neobrutal">
-              <div className="relative w-full h-48 mb-6 rounded-neobrutal border-2 border-text overflow-hidden">
+              <div className="relative w-full h-68 mb-6 rounded-neobrutal border-2 border-text overflow-hidden">
                 <Image src={useCase.image} alt={useCase.title} fill className="object-cover" />
               </div>
               <h3 className="font-brush text-3xl font-bold mb-4 text-text">{useCase.title}</h3>
@@ -84,7 +84,7 @@ export default function UseCases() {
         {/* Mobile Carousel */}
         <div className="md:hidden">
           <div className="card-neobrutal">
-            <div className="relative w-full h-48 mb-6 rounded-neobrutal border-2 border-text overflow-hidden">
+            <div className="relative w-full h-68 mb-6 rounded-neobrutal border-2 border-text overflow-hidden">
               <Image
                 src={useCases[currentIndex].image}
                 alt={useCases[currentIndex].title}
