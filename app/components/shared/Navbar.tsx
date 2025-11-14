@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,18 +17,24 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b-4 border-text shadow-neobrutal">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary-sky border-b-4 border-text shadow-neobrutal">
       {/* Drippy top edge */}
-      <div className="absolute -top-4 left-0 right-0 h-4 drippy-shape bg-white"></div>
+      <div className="absolute -top-4 left-0 right-0 h-4 drippy-shape bg-primary-sky"></div>
 
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link
             href="#home"
-            className="font-brush text-2xl md:text-3xl font-bold text-text hover:scale-105 transition-transform"
+            className="hover:scale-115 transition-transform"
           >
-            PHILLY FOOD
+            <Image
+              src="/images/logo_circular.png"
+              alt="Philly Food Logo"
+              width={60}
+              height={60}
+              className="object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
