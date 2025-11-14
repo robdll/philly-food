@@ -23,13 +23,15 @@ export default function Button({
   rel,
 }: ButtonProps) {
   const baseStyles = `
-    px-8 py-4 rounded-neobrutal-lg
-    font-badang text-lg font-bold
+    px-4 py-3 md:px-8 md:py-4 rounded-neobrutal-lg
+    font-badang text-base md:text-lg font-bold
     transition-all duration-200
     border-4 border-text
     shadow-neobrutal-lg
     disabled:opacity-50 disabled:cursor-not-allowed
     tracking-[3px]
+    text-center
+    inline-block
   `
 
   const primaryStyles = `
