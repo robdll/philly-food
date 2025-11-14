@@ -36,17 +36,20 @@ public/
 ## 🎨 Design System
 
 ### Colors
+
 - Primary Red: `#EC5B67`
 - Primary Gold: `#EFC856`
 - Text: `#1A1919`
 - White: `#FFFEFE`
 
 ### Fonts
+
 - **Badang Italic**: Navigation links and buttons
 - **Brush Up Too**: Section titles and big headings
 - **Work Sans**: Paragraphs and body text
 
 ### Style
+
 - Neobrutalist design with thick strokes
 - High contrast
 - Organic drippy shapes
@@ -57,6 +60,7 @@ public/
 ## 🛠️ Setup
 
 1. Install dependencies:
+
 ```bash
 npm install
 ```
@@ -71,6 +75,7 @@ npm install
    If fonts are not available, the site will fall back to system fonts. You can also use Google Fonts by updating `globals.css`.
 
 3. Run the development server:
+
 ```bash
 npm run dev
 ```
@@ -102,4 +107,3 @@ npm run dev
 npm run build
 npm start
 ```
-

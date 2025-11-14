@@ -17,7 +17,9 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -27,13 +29,13 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000))
-    
+
     setIsSubmitting(false)
     setIsSubmitted(true)
-    
+
     // Reset form after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false)
@@ -52,20 +54,14 @@ export default function ContactForm() {
   return (
     <section id="contatti" className="py-16 md:py-24 bg-primary-red">
       <div className="container mx-auto px-4">
-        <h2 className="section-title text-center mb-12">
-          Contattaci
-        </h2>
+        <h2 className="section-title text-center mb-12">Contattaci</h2>
         <div className="max-w-2xl mx-auto">
           <div className="card-neobrutal">
             {isSubmitted ? (
               <div className="text-center py-8">
                 <div className="text-6xl mb-4">✅</div>
-                <h3 className="font-brush text-3xl font-bold mb-4 text-text">
-                  Messaggio inviato!
-                </h3>
-                <p className="font-sans text-lg text-text/70">
-                  Ti risponderemo entro 24 ore.
-                </p>
+                <h3 className="font-brush text-3xl font-bold mb-4 text-text">Messaggio inviato!</h3>
+                <p className="font-sans text-lg text-text/70">Ti risponderemo entro 24 ore.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -115,7 +111,10 @@ export default function ContactForm() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="eventType" className="block font-sans font-medium mb-2 text-text">
+                    <label
+                      htmlFor="eventType"
+                      className="block font-sans font-medium mb-2 text-text"
+                    >
                       Tipo di evento *
                     </label>
                     <select
@@ -137,7 +136,10 @@ export default function ContactForm() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="eventDate" className="block font-sans font-medium mb-2 text-text">
+                    <label
+                      htmlFor="eventDate"
+                      className="block font-sans font-medium mb-2 text-text"
+                    >
                       Data evento
                     </label>
                     <input
@@ -203,4 +205,3 @@ export default function ContactForm() {
     </section>
   )
 }
-

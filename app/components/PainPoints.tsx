@@ -11,7 +11,7 @@ export default function PainPoints() {
       {/* Drippy shapes */}
       <div className="absolute top-0 left-0 right-0 h-16 drippy-shape bg-primary-gold opacity-80"></div>
       <div className="absolute bottom-0 left-0 right-0 h-16 drippy-shape-bottom bg-primary-gold opacity-80"></div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="section-title text-text mb-8">
@@ -36,4 +36,3 @@ export default function PainPoints() {
     </section>
   )
 }
-

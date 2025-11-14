@@ -52,29 +52,21 @@ export default function Button({
     ${type === 'primary' ? primaryStyles : secondaryStyles}
     ${!disabled ? hoverStyles : ''}
     ${className}
-  `.trim().replace(/\s+/g, ' ')
+  `
+    .trim()
+    .replace(/\s+/g, ' ')
 
   if (href) {
     return (
-      <Link
-        href={href}
-        className={combinedStyles}
-        target={target}
-        rel={rel}
-      >
+      <Link href={href} className={combinedStyles} target={target} rel={rel}>
         {children}
       </Link>
     )
   }
 
   return (
-    <button
-      onClick={onClick}
-      disabled={disabled}
-      className={combinedStyles}
-    >
+    <button onClick={onClick} disabled={disabled} className={combinedStyles}>
       {children}
     </button>
   )
 }
-

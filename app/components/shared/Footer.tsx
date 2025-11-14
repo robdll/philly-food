@@ -65,13 +65,14 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@phillyfood.it" className="hover:text-primary-gold transition-colors">
+                <a
+                  href="mailto:info@phillyfood.it"
+                  className="hover:text-primary-gold transition-colors"
+                >
                   ✉️ info@phillyfood.it
                 </a>
               </li>
-              <li className="opacity-90">
-                🚚 Operiamo in tutta Italia
-              </li>
+              <li className="opacity-90">🚚 Operiamo in tutta Italia</li>
             </ul>
           </div>
         </div>
@@ -86,4 +87,3 @@ export default function Footer() {
     </footer>
   )
 }
-

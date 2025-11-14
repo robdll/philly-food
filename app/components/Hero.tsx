@@ -3,10 +3,13 @@ import Button from './shared/Button'
 
 export default function Hero() {
   return (
-    <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24 bg-primary-red relative overflow-hidden">
+    <section
+      id="home"
+      className="pt-24 pb-16 md:pt-32 md:pb-24 bg-primary-red relative overflow-hidden"
+    >
       {/* Drippy shapes at top */}
       <div className="absolute top-0 left-0 right-0 h-20 drippy-shape bg-primary-gold opacity-20"></div>
-      
+
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
@@ -50,4 +53,3 @@ export default function Hero() {
     </section>
   )
 }
-
