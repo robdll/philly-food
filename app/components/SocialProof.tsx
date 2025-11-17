@@ -2,11 +2,12 @@ import Image from 'next/image'
 
 export default function SocialProof() {
   const logos = [
-    { name: 'Gardaland', image: '/images/brand_1.png' },
-    { name: 'Party Like a Deejay', placeholder: 'Party Like a Deejay' },
-    { name: 'Brand 1', placeholder: 'Brand 1' },
-    { name: 'Brand 2', placeholder: 'Brand 2' },
-    { name: 'Brand 3', placeholder: 'Brand 3' },
+    { name: 'Gardaland', image: '/images/brand_01.png' },
+    { name: 'Naba', image: '/images/brand_02.png' },
+    { name: 'KickIt', image: '/images/brand_03.png' },
+    { name: 'Elrow', image: '/images/brand_04.png' },
+    { name: 'Fuori GP', image: '/images/brand_05.png' },
+    { name: 'Game Padel Center', image: '/images/brand_06.png' },
   ]
 
   return (
@@ -15,25 +16,19 @@ export default function SocialProof() {
         <p className="text-center font-sans text-sm text-text/60 mb-8 uppercase tracking-wider">
           Si fidano di noi
         </p>
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+        <div className="flex flex-nowrap overflow-x-auto scrollbar-hide gap-8 md:gap-12 pb-2">
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="flex items-center justify-center w-32 h-16 md:w-40 md:h-20 bg-white rounded-neobrutal border-2 border-text/20 shadow-neobrutal opacity-60 hover:opacity-100 transition-opacity"
+              className="flex items-center justify-center shrink-0 h-16 md:h-20 bg-white rounded-neobrutal border-2 border-text/20 shadow-neobrutal opacity-60 hover:opacity-100 transition-opacity"
             >
-              {logo.image ? (
-                <Image
-                  src={logo.image}
-                  alt={logo.name}
-                  width={132}
-                  height={66}
-                  className="object-contain max-w-full max-h-full"
-                />
-              ) : (
-                <span className="font-sans font-bold text-text/40 text-sm md:text-base">
-                  {logo.placeholder}
-                </span>
-              )}
+              <Image
+                src={logo.image}
+                alt={logo.name}
+                width={132}
+                height={66}
+                className="object-contain max-w-full max-h-full"
+              />
             </div>
           ))}
         </div>
