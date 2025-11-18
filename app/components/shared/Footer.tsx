@@ -60,13 +60,13 @@ export default function Footer() {
             <h4 className="font-brush text-xl font-bold mb-4">Contatti</h4>
             <ul className="space-y-2 font-sans text-sm">
               <li>
-                <a href="tel:+393453506693" className="hover:text-primary-gold transition-colors">
-                  📞 +39 345 350 6693
+                <a href="tel:+393382663963" className="hover:text-primary-gold transition-colors">
+                  📞 +39 338 266 3963
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:info@phillyfood.it"
+                  href="mailto:info@phillyfood.net"
                   className="hover:text-primary-gold transition-colors"
                 >
                   ✉️ info@phillyfood.it
