@@ -1,31 +1,6 @@
-export default function HowItWorks() {
-  const steps = [
-    {
-      number: '1',
-      icon: '📞',
-      title: 'Contattaci',
-      description: 'Tramite modulo o WhatsApp',
-    },
-    {
-      number: '2',
-      icon: '💬',
-      title: 'Raccontaci',
-      description: 'Il tuo evento',
-    },
-    {
-      number: '3',
-      icon: '📋',
-      title: 'Ricevi',
-      description: 'Un preventivo personalizzato',
-    },
-    {
-      number: '4',
-      icon: '🎉',
-      title: 'Rilassati',
-      description: 'Noi portiamo gusto e stile al tuo evento!',
-    },
-  ]
+import { steps } from './HowItWorks.constants'
 
+export default function HowItWorks() {
   return (
     <section className="py-16 md:py-24 bg-primary-gold">
       <div className="container mx-auto px-4">
@@ -46,3 +21,4 @@ export default function HowItWorks() {
     </section>
   )
 }
+

@@ -1,29 +1,8 @@
 import Image from 'next/image'
-import Button from './shared/Button'
+import Button from '../shared/Button'
+import { features, images } from './VehicleFleet.constants'
 
 export default function VehicleFleet() {
-  const features = [
-    {
-      text: 'Tu immagina, noi lo allestiamo: configurazioni su misura per trasformare il mezzo nel tuo alleato perfetto.',
-    },
-    {
-      text: 'Sempre al massimo: manutenzione continua e prestazioni che non ti lasciano mai solo.',
-    },
-    {
-      text: 'Tecnologia all\'avanguardia: mezzi di ultima generazione, sicuri, efficienti e sostenibili.',
-    },
-    {
-      text: 'Un partner al tuo fianco: assistenza dedicata prima, durante e dopo il noleggio.',
-    },
-  ]
-
-  const images = [
-    '/images/mezzo_1.jpg',
-    '/images/mezzo_2.jpg',
-    '/images/mezzo_3.jpg',
-    '/images/mezzo_4.jpg',
-  ]
-
   return (
     <section id="noleggio" className="py-16 md:py-24 bg-primary-gold">
       <div className="container mx-auto px-4">

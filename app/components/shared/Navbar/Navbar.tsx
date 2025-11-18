@@ -3,18 +3,10 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { navLinks } from './Navbar.constants'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
-
-  const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#eventi', label: 'Eventi & Catering' },
-    { href: '#noleggio', label: 'Noleggio Truck' },
-    { href: '#chi-siamo', label: 'Chi Siamo' },
-    { href: '#faq', label: 'FAQ' },
-    { href: '#contatti', label: 'Contatti' },
-  ]
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary-sky border-b-4 border-text shadow-neobrutal">
@@ -91,3 +83,4 @@ export default function Navbar() {
     </nav>
   )
 }
+

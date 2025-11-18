@@ -69,7 +69,7 @@ export default function Footer() {
                   href="mailto:info@phillyfood.net"
                   className="hover:text-primary-gold transition-colors"
                 >
-                  ✉️ info@phillyfood.it
+                  ✉️ info@phillyfood.net
                 </a>
               </li>
               <li className="opacity-90">🚚 Operiamo in tutta Italia</li>

@@ -1,23 +1,6 @@
-export default function WhyUs() {
-  const reasons = [
-    {
-      icon: '📅',
-      text: 'Esperienza nella ristorazione da oltre 15 anni',
-    },
-    {
-      icon: '🚚',
-      text: 'truck completamente attrezzati, cargo bike, stand e banchi modulari',
-    },
-    {
-      icon: '⚡',
-      text: 'Cucina veloce, di qualità e personalizzabile',
-    },
-    {
-      icon: '👥',
-      text: 'Staff professionale e affidabile',
-    },
-  ]
+import { reasons } from './WhyUs.constants'
 
+export default function WhyUs() {
   return (
     <section id="chi-siamo" className="py-16 md:py-24 bg-primary-red">
       <div className="container mx-auto px-4">
@@ -34,3 +17,4 @@ export default function WhyUs() {
     </section>
   )
 }
+
