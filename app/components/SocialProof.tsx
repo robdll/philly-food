@@ -8,6 +8,8 @@ export default function SocialProof() {
     { name: 'Elrow', image: '/images/brand_04.png' },
     { name: 'Fuori GP', image: '/images/brand_05.png' },
     { name: 'Game Padel Center', image: '/images/brand_06.png' },
+    { name: 'Heidelberg Materials', image: '/images/brand_07.png' },
+    { name: 'Padel Zenter', image: '/images/brand_08.png' },
   ]
 
   return (
