@@ -20,9 +20,6 @@ export default function Hero() {
             <p className="font-sans text-xl md:text-2xl mb-4 text-text/80">
               Il catering che sorprende: arriviamo ovunque con i nostri food truck.
             </p>
-            <p className="font-sans text-lg mb-8 text-text/70">
-              Il gusto che unisce le persone nei tuoi eventi
-            </p>
             <Button
               type="secondary"
               href="https://wa.me/393453506693"

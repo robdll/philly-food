@@ -6,14 +6,14 @@ import Image from 'next/image'
 export default function UseCases() {
   const useCases = [
     {
-      title: 'Feste private e matrimoni',
+      title: 'Feste private e catering',
       bullets: [
         'Menu personalizzabile per ogni esigenza',
         'Servizio completo chiavi in mano',
         'Atmosfera unica e memorabile',
       ],
       description:
-        'Rendi il tuo evento speciale con il gusto autentico dei nostri panini. Perfetto per matrimoni, compleanni e celebrazioni private.',
+        'Rendi il tuo evento speciale con il gusto autentico del nostro cibo. Perfetto per le tue feste.',
       image: '/images/private.png',
     },
     {
@@ -28,14 +28,14 @@ export default function UseCases() {
       image: '/images/companies.png',
     },
     {
-      title: 'Festival e fiere',
+      title: 'Festival on the road',
       bullets: [
         'Presenza fissa o itinerante',
         'Alta capacità di servizio',
         'Menu adatti a grandi volumi',
       ],
       description:
-        'Porta il gusto di Philadelphia ai tuoi eventi pubblici. Perfetto per festival, fiere, sagre e manifestazioni di piazza.',
+        'Aggiungi un tocco di sapore autentico ai tuoi eventi e festival on the road.',
       image: '/images/festival.png',
     },
     {

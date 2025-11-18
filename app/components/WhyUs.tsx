@@ -6,7 +6,7 @@ export default function WhyUs() {
     },
     {
       icon: '🚚',
-      text: 'Due truck completamente attrezzati + carretto hot dog',
+      text: 'truck completamente attrezzati, cargo bike, stand e banchi modulari',
     },
     {
       icon: '⚡',

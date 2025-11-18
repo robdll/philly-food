@@ -1,9 +1,11 @@
 export default function PainPoints() {
   const points = [
-    'Organizzazione completa del servizio',
-    'Staff professionale incluso',
-    'Pulizia e allestimento gestiti da noi',
-    'Nessun pensiero, solo gusto e divertimento',
+    'Organizzazione completa dall’inizio alla fine',
+    'Staff professionale e sempre presente',
+    'Allestimento, servizio e pulizia gestiti interamente da noi',
+    'Zero pensieri: tu goditi l’evento, noi pensiamo a tutto',
+    'Soluzioni personalizzate in base al tipo di festa o occasione',
+    'Qualità, gusto e affidabilità garantiti',
   ]
 
   return (
@@ -15,7 +17,7 @@ export default function PainPoints() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="section-title text-text mb-8">
-            Cerchi un servizio chiavi in mano per il tuo evento?
+            Il tuo evento, senza pensieri. Al resto pensiamo noi.
           </h2>
           <div className="bg-white rounded-neobrutal-lg border-4 border-text shadow-neobrutal-lg p-8 md:p-12">
             <ul className="space-y-4 text-left">

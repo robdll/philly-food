@@ -41,6 +41,19 @@ export default function FAQ() {
       answer:
         'Sì, possiamo fornire una selezione di bevande analcoliche. Per bevande alcoliche, possiamo organizzarci in base alle normative locali e alle tue esigenze specifiche.',
     },
+    {
+      question: 'Fornite intrattenimento?',
+      answer:
+        `Sì. Possiamo organizzare diverse forme di intrattenimento in base al tipo 
+        di evento: musica live o DJ set, animazione per adulti e bambini, giochi, 
+        microfono e impianto audio, e molto altro. Ti proponiamo le soluzioni 
+        migliori in base al budget e allo stile della festa.`,
+    },
+    {
+      question: 'Quanto dura il servizio durante l’evento?',
+      answer:
+        "La durata è personalizzabile. Possiamo coprire aperitivo, pranzo, cena o servizio continuo."
+    },
   ]
 
   const toggleFAQ = (index: number) => {
