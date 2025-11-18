@@ -14,7 +14,7 @@ export default function SocialProof() {
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="flex items-center justify-center shrink-0 opacity-90 hover:opacity-100 transition-opacity hover:scale-105"
+              className="flex items-center justify-center shrink-0 opacity-90 hover:opacity-100 hover:scale-105 transition-transform"
             >
               <Image
                 src={logo.image}
