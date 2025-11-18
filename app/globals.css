@@ -36,7 +36,7 @@
       url('/fonts/Badang-Italic.woff2') format('woff2'),
       url('/fonts/Badang-Italic.woff') format('woff');
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
     font-display: swap;
   }
 
@@ -118,6 +118,12 @@
   button.font-badang,
   a.font-badang {
     letter-spacing: 3px;
+  }
+
+  /* Ensure Badang font works in Safari */
+  .font-badang {
+    font-family: var(--font-badang);
+    font-style: normal;
   }
 
   .fade-up {
