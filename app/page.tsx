@@ -5,6 +5,7 @@ import SocialProof from './components/SocialProof'
 import UseCases from './components/UseCases'
 import PainPoints from './components/PainPoints'
 import WhyUs from './components/WhyUs'
+import VehicleFleet from './components/VehicleFleet'
 import HowItWorks from './components/HowItWorks'
 import Pricing from './components/Pricing'
 import FAQ from './components/FAQ'
@@ -19,6 +20,7 @@ export default function Home() {
       <UseCases />
       <PainPoints />
       <WhyUs />
+      <VehicleFleet />
       <HowItWorks />
       <Pricing />
       <FAQ />
