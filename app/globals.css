@@ -52,10 +52,11 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
-    @apply bg-white text-text;
+    @apply bg-white text-text overflow-x-hidden;
     font-family: var(--font-family-sans);
   }
 }
