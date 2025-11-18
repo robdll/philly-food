@@ -56,7 +56,7 @@ ${message ? `\nMessaggio:\n${message}` : ''}
     // Send email using Resend
     const { data, error } = await resend.emails.send({
       from: 'Philli Food <roberto@robdll.com>', // You'll need to verify your domain with Resend
-      to: ['info@phillyfood.net'],
+      to: ['info@lillos.net'],
       subject: `Nuova richiesta di contatto: ${name} - ${eventTypeLabel}`,
       html: emailHtml,
       text: emailText,

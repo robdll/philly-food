@@ -66,10 +66,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@phillyfood.net"
+                  href="mailto:info@lillos.net"
                   className="hover:text-primary-gold transition-colors"
                 >
-                  ✉️ info@phillyfood.net
+                  ✉️ Info@lillos.net
                 </a>
               </li>
               <li className="opacity-90">🚚 Operiamo in tutta Italia</li>
