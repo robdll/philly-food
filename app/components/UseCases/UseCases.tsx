@@ -3,13 +3,15 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { useCases } from './UseCases.constants'
+import SlideIn from '../shared/SlideIn'
 
 export default function UseCases() {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   return (
     <section id="eventi" className="py-16 md:py-24 bg-primary-red">
-      <div className="container mx-auto px-4">
+      <SlideIn direction="left">
+        <div className="container mx-auto px-4">
         <h2 className="section-title text-center mb-12">
           Scopri tutte le situazioni in cui i nostri food truck fanno la differenza
         </h2>
@@ -88,6 +90,7 @@ export default function UseCases() {
           </div>
         </div>
       </div>
+      </SlideIn>
     </section>
   )
 }

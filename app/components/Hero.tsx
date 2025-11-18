@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Button from './shared/Button'
+import SlideIn from './shared/SlideIn'
 
 export default function Hero() {
   return (
@@ -10,7 +11,8 @@ export default function Hero() {
       {/* Drippy shapes at top */}
       <div className="absolute top-0 left-0 right-0 h-20 drippy-shape bg-primary-gold opacity-20"></div>
 
-      <div className="container mx-auto px-4">
+      <SlideIn direction="bottom" delay={0}>
+        <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="fade-up">
@@ -47,6 +49,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      </SlideIn>
     </section>
   )
 }

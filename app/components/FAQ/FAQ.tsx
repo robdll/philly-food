@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { faqs, type FAQItem } from './FAQ.constants'
+import SlideIn from '../shared/SlideIn'
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
@@ -12,7 +13,8 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="py-16 md:py-24 bg-primary-gold">
-      <div className="container mx-auto px-4">
+      <SlideIn direction="bottom">
+        <div className="container mx-auto px-4">
         <h2 className="section-title text-center mb-12">Domande Frequenti</h2>
         <div className="max-w-3xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
@@ -26,7 +28,7 @@ export default function FAQ() {
                   {faq.question}
                 </h3>
                 <button
-                  className="flex-shrink-0 w-8 h-8 rounded-full border-2 border-text bg-primary-red text-white flex items-center justify-center font-bold transition-transform"
+                  className="shrink-0 w-8 h-8 rounded-full border-2 border-text bg-primary-red text-white flex items-center justify-center font-bold transition-transform"
                   aria-label="Toggle FAQ"
                 >
                   <span
@@ -45,6 +47,7 @@ export default function FAQ() {
           ))}
         </div>
       </div>
+      </SlideIn>
     </section>
   )
 }

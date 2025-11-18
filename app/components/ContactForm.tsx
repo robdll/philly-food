@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Button from './shared/Button'
+import SlideIn from './shared/SlideIn'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -70,7 +71,8 @@ export default function ContactForm() {
 
   return (
     <section id="contatti" className="py-16 md:py-24 bg-primary-red">
-      <div className="container mx-auto px-4">
+      <SlideIn direction="bottom">
+        <div className="container mx-auto px-4">
         <h2 className="section-title text-center mb-12">Contattaci</h2>
         <div className="max-w-2xl mx-auto">
           <div className="card-neobrutal">
@@ -219,6 +221,7 @@ export default function ContactForm() {
           </div>
         </div>
       </div>
+      </SlideIn>
     </section>
   )
 }

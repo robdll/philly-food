@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import Button from '../shared/Button'
 import { features, images } from './VehicleFleet.constants'
+import SlideIn from '../shared/SlideIn'
 
 export default function VehicleFleet() {
   return (
     <section id="noleggio" className="py-16 md:py-24 bg-primary-gold">
-      <div className="container mx-auto px-4">
+      <SlideIn direction="left">
+        <div className="container mx-auto px-4">
         <h2 className="section-title text-center mb-6">
           Noleggia il tuo mezzo – Parco Veicoli Dedicato
         </h2>
@@ -80,6 +82,7 @@ export default function VehicleFleet() {
           </Button>
         </div>
       </div>
+      </SlideIn>
     </section>
   )
 }

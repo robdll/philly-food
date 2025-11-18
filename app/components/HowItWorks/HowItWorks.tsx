@@ -1,9 +1,11 @@
 import { steps } from './HowItWorks.constants'
+import SlideIn from '../shared/SlideIn'
 
 export default function HowItWorks() {
   return (
     <section className="py-16 md:py-24 bg-primary-gold">
-      <div className="container mx-auto px-4">
+      <SlideIn direction="bottom">
+        <div className="container mx-auto px-4">
         <h2 className="section-title text-center mb-12">Come funziona</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, index) => (
@@ -18,6 +20,7 @@ export default function HowItWorks() {
           ))}
         </div>
       </div>
+      </SlideIn>
     </section>
   )
 }
