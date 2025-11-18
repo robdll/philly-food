@@ -12,7 +12,7 @@ export default function VehicleFleet() {
           Noleggia il tuo mezzo – Parco Veicoli Dedicato
         </h2>
         
-        <p className="text-center font-sans text-lg md:text-xl mb-8 text-text/80 max-w-3xl mx-auto">
+        <p className="text-center font-family-sans text-lg md:text-xl mb-8 text-text/80 max-w-3xl mx-auto">
           Scopri il nostro parco mezzi progettato per rispondere a ogni esigenza operativa.
         </p>
 
@@ -55,7 +55,7 @@ export default function VehicleFleet() {
           </div>
         </div>
 
-        <p className="text-center font-sans text-base md:text-lg mb-12 text-text/70 max-w-2xl mx-auto">
+        <p className="text-center font-family-sans text-base md:text-lg mb-12 text-text/70 max-w-2xl mx-auto">
           Offriamo veicoli completamente configurabili, adattabili al tuo tipo di attività e al livello di servizio che vuoi garantire.
         </p>
 
@@ -65,13 +65,13 @@ export default function VehicleFleet() {
             <div key={index} className="card-neobrutal">
               <div className="flex items-start gap-3">
                 <span className="text-primary-red font-bold text-xl mt-1 shrink-0">•</span>
-                <p className="font-sans text-text">{feature.text}</p>
+                <p className="font-family-sans text-text">{feature.text}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <p className="text-center font-sans text-lg md:text-xl font-medium text-text max-w-2xl mx-auto mb-8">
+        <p className="text-center font-family-sans text-lg md:text-xl font-medium text-text max-w-2xl mx-auto mb-8">
           Scegli la soluzione ideale e mettiti su strada con un veicolo pronto a lavorare per te.
         </p>
 

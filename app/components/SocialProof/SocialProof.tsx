@@ -7,7 +7,7 @@ export default function SocialProof() {
     <section className="py-12 bg-primary-gold">
       <SlideIn direction="bottom">
         <div className="container mx-auto px-4">
-        <p className="text-center font-sans text-sm text-text/80 mb-8 uppercase tracking-wider">
+        <p className="text-center font-family-sans text-sm text-text/80 mb-8 uppercase tracking-wider">
           Si fidano di noi
         </p>
         <div className="flex flex-nowrap overflow-x-auto scrollbar-hide gap-8 md:gap-12 py-2">

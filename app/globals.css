@@ -59,6 +59,7 @@
     @apply bg-white text-text overflow-x-hidden;
     font-family: var(--font-family-sans);
   }
+
 }
 
 @layer components {

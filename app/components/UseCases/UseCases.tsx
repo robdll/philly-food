@@ -24,15 +24,15 @@ export default function UseCases() {
                 <Image src={useCase.image} alt={useCase.title} fill className="object-cover" />
               </div>
               <h3 className="font-brush text-3xl font-bold mb-4 text-text">{useCase.title}</h3>
-              <ul className="space-y-2 mb-4 font-sans">
+              <ul className="space-y-2 mb-4 font-family-sans">
                 {useCase.bullets.map((bullet, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="text-primary-red font-bold mt-1">▸</span>
-                    <span>{bullet}</span>
+                    <span className="font-family-sans">{bullet}</span>
                   </li>
                 ))}
               </ul>
-              <p className="font-sans text-text/70">{useCase.description}</p>
+              <p className="font-family-sans text-text/70">{useCase.description}</p>
             </div>
           ))}
         </div>
@@ -51,15 +51,15 @@ export default function UseCases() {
             <h3 className="font-brush text-2xl font-bold mb-4 text-text">
               {useCases[currentIndex].title}
             </h3>
-            <ul className="space-y-2 mb-4 font-sans">
+            <ul className="space-y-2 mb-4 font-family-sans">
               {useCases[currentIndex].bullets.map((bullet, i) => (
                 <li key={i} className="flex items-start gap-2">
                   <span className="text-primary-red font-bold mt-1">▸</span>
-                  <span>{bullet}</span>
+                  <span className="font-family-sans">{bullet}</span>
                 </li>
               ))}
             </ul>
-            <p className="font-sans text-text/70 mb-4">{useCases[currentIndex].description}</p>
+            <p className="font-family-sans text-text/70 mb-4">{useCases[currentIndex].description}</p>
           </div>
 
           {/* Carousel Controls */}

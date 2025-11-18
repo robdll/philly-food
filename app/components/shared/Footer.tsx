@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Logo & Description */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="font-brush text-3xl font-bold mb-4">PHILLY FOOD</h3>
-            <p className="font-sans text-sm opacity-90 mb-4">
+            <p className="font-family-sans text-sm opacity-90 mb-4">
               Il gusto autentico di Philadelphia direttamente nelle strade della tua città.
             </p>
             <Button
@@ -26,7 +26,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="font-brush text-xl font-bold mb-4">Link Rapidi</h4>
-            <ul className="space-y-2 font-sans">
+            <ul className="space-y-2 font-family-sans">
               <li>
                 <Link href="#home" className="hover:text-primary-gold transition-colors">
                   Home
@@ -58,7 +58,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="font-brush text-xl font-bold mb-4">Contatti</h4>
-            <ul className="space-y-2 font-sans text-sm">
+            <ul className="space-y-2 font-family-sans text-sm">
               <li>
                 <a href="tel:+393382663963" className="hover:text-primary-gold transition-colors">
                   📞 +39 338 266 3963
@@ -79,7 +79,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t-4 border-white pt-8 mt-8">
-          <p className="text-center font-sans text-sm opacity-75">
+          <p className="text-center font-family-sans text-sm opacity-75">
             © {new Date().getFullYear()} Philly Food. Tutti i diritti riservati.
           </p>
         </div>

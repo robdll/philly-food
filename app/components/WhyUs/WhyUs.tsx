@@ -17,7 +17,7 @@ export default function WhyUs() {
             >
               <div className="card-neobrutal text-center">
                 <div className="text-6xl mb-4">{reason.icon}</div>
-                <p className="font-sans text-lg font-medium text-text">
+                <p className="font-family-sans text-lg font-medium text-text">
                   {reason.text}
                 </p>
               </div>

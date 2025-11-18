@@ -40,7 +40,7 @@ export default function FAQ() {
               </div>
               {openIndex === index && (
                 <div className="mt-4 pt-4 border-t-2 border-text/20">
-                  <p className="font-sans text-text/80 leading-relaxed">{faq.answer}</p>
+                  <p className="font-family-sans text-text/80 leading-relaxed">{faq.answer}</p>
                 </div>
               )}
             </div>

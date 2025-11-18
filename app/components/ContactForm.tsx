@@ -80,13 +80,13 @@ export default function ContactForm() {
               <div className="text-center py-8">
                 <div className="text-6xl mb-4">✅</div>
                 <h3 className="font-brush text-3xl font-bold mb-4 text-text">Messaggio inviato!</h3>
-                <p className="font-sans text-lg text-text/70">Ti risponderemo entro 24 ore.</p>
+                <p className="font-family-sans text-lg text-text/70">Ti risponderemo entro 24 ore.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block font-sans font-medium mb-2 text-text">
+                    <label htmlFor="name" className="block font-family-sans font-medium mb-2 text-text">
                       Nome *
                     </label>
                     <input
@@ -96,11 +96,11 @@ export default function ContactForm() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow"
+                      className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-family-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block font-sans font-medium mb-2 text-text">
+                    <label htmlFor="email" className="block font-family-sans font-medium mb-2 text-text">
                       Email *
                     </label>
                     <input
@@ -110,13 +110,13 @@ export default function ContactForm() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow"
+                      className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-family-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow"
                     />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="phone" className="block font-sans font-medium mb-2 text-text">
+                    <label htmlFor="phone" className="block font-family-sans font-medium mb-2 text-text">
                       Telefono *
                     </label>
                     <input
@@ -126,13 +126,13 @@ export default function ContactForm() {
                       required
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow"
+                      className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-family-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="eventType"
-                      className="block font-sans font-medium mb-2 text-text"
+                      className="block font-family-sans font-medium mb-2 text-text"
                     >
                       Tipo di evento *
                     </label>
@@ -142,7 +142,7 @@ export default function ContactForm() {
                       required
                       value={formData.eventType}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow bg-white"
+                      className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-family-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow bg-white"
                     >
                       <option value="">Seleziona...</option>
                       <option value="festa-privata">Festa privata / Matrimonio</option>
@@ -157,7 +157,7 @@ export default function ContactForm() {
                   <div>
                     <label
                       htmlFor="eventDate"
-                      className="block font-sans font-medium mb-2 text-text"
+                      className="block font-family-sans font-medium mb-2 text-text"
                     >
                       Data evento
                     </label>
@@ -167,11 +167,11 @@ export default function ContactForm() {
                       name="eventDate"
                       value={formData.eventDate}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow"
+                      className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-family-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow"
                     />
                   </div>
                   <div>
-                    <label htmlFor="guests" className="block font-sans font-medium mb-2 text-text">
+                    <label htmlFor="guests" className="block font-family-sans font-medium mb-2 text-text">
                       Numero ospiti
                     </label>
                     <input
@@ -181,12 +181,12 @@ export default function ContactForm() {
                       min="1"
                       value={formData.guests}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow"
+                      className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-family-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow"
                     />
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="message" className="block font-sans font-medium mb-2 text-text">
+                  <label htmlFor="message" className="block font-family-sans font-medium mb-2 text-text">
                     Messaggio
                   </label>
                   <textarea
@@ -195,7 +195,7 @@ export default function ContactForm() {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow resize-none"
+                    className="w-full px-4 py-3 rounded-neobrutal border-4 border-text shadow-neobrutal font-family-sans focus:outline-none focus:shadow-neobrutal-lg transition-shadow resize-none"
                   />
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 items-center justify-between pt-4">

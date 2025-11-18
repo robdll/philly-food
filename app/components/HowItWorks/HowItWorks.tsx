@@ -16,14 +16,14 @@ export default function HowItWorks() {
               delay={0.1 + index * 0.1}
             >
               <div className="card-neobrutal text-center relative">
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-primary-red text-white rounded-full border-4 border-text shadow-neobrutal flex items-center justify-center font-bold font-sans text-xl">
+                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-primary-red text-white rounded-full border-4 border-text shadow-neobrutal flex items-center justify-center font-bold font-family-sans text-xl">
                   {step.number}
                 </div>
                 <div className="text-5xl mb-4 mt-4">{step.icon}</div>
                 <h3 className="font-brush text-2xl font-bold mb-2 text-text">
                   {step.title}
                 </h3>
-                <p className="font-sans text-text/70">{step.description}</p>
+                <p className="font-family-sans text-text/70">{step.description}</p>
               </div>
             </SlideIn>
           ))}

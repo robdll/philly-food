@@ -26,10 +26,10 @@ export default function PainPoints() {
             <ul className="space-y-4 text-left">
               {points.map((point, index) => (
                 <li key={index} className="flex items-start gap-4">
-                  <span className="shrink-0 w-8 h-8 bg-primary-red text-white rounded-full border-2 border-text flex items-center justify-center font-bold font-sans">
+                  <span className="shrink-0 w-8 h-8 bg-primary-red text-white rounded-full border-2 border-text flex items-center justify-center font-bold font-family-sans">
                     ✓
                   </span>
-                  <span className="font-sans text-lg md:text-xl font-medium text-text">
+                  <span className="font-family-sans text-lg md:text-xl font-medium text-text">
                     {point}
                   </span>
                 </li>

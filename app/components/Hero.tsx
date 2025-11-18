@@ -19,7 +19,7 @@ export default function Hero() {
               <h1 className="section-title mb-6">
                 Rendiamo unico il tuo evento con il gusto del nostro food truck!
               </h1>
-              <p className="font-sans text-xl md:text-2xl mb-4 text-text/80">
+              <p className="font-family-sans text-xl md:text-2xl mb-4 text-text/80">
                 Il catering che sorprende: arriviamo ovunque con i nostri food truck.
               </p>
               <Button
