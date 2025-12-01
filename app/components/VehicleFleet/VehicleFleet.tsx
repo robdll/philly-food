@@ -24,13 +24,13 @@ export default function VehicleFleet() {
               {images.map((image, index) => (
                 <div
                   key={index}
-                  className="relative w-80 h-64 rounded-neobrutal border-4 border-text shadow-neobrutal overflow-hidden shrink-0"
+                  className="relative w-60 h-48 rounded-neobrutal border-4 border-text shadow-neobrutal overflow-hidden shrink-0"
                 >
                   <Image
                     src={image}
                     alt={`Mezzo ${index + 1}`}
                     fill
-                    className="object-cover"
+                    className="object-cover object-left"
                   />
                 </div>
               ))}
@@ -38,7 +38,7 @@ export default function VehicleFleet() {
           </div>
 
           {/* Desktop: Grid */}
-          <div className="hidden md:grid md:grid-cols-2 gap-6">
+          <div className="hidden md:grid md:grid-cols-4 gap-6">
             {images.map((image, index) => (
               <div
                 key={index}
@@ -48,7 +48,7 @@ export default function VehicleFleet() {
                   src={image}
                   alt={`Mezzo ${index + 1}`}
                   fill
-                  className="object-cover"
+                  className="object-cover object-left"
                 />
               </div>
             ))}
