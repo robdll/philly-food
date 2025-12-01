@@ -4,33 +4,56 @@ A modern, neobrutalist Next.js website for Philly Food, a food truck catering se
 
 ## 🚀 Tech Stack
 
-- **Next.js 14** (App Router)
+- **Next.js 16** (App Router)
 - **TypeScript**
-- **Tailwind CSS**
+- **Tailwind CSS 4**
+- **Framer Motion** (animations)
+- **Resend** (email service)
 - **Turbopack** (for faster development)
 
 ## 📁 Project Structure
 
 ```
 app/
+  api/
+    contact/
+      route.ts          # Contact form API endpoint
   components/
     shared/
-      Navbar.tsx
+      Navbar/
+        Navbar.tsx
+        Navbar.constants.tsx
       Footer.tsx
+      Button.tsx
+      SlideIn.tsx
     Hero.tsx
-    SocialProof.tsx
-    UseCases.tsx
+    SocialProof/
+      SocialProof.tsx
+      SocialProof.constants.tsx
+    UseCases/
+      UseCases.tsx
+      UseCases.constants.tsx
     PainPoints.tsx
-    WhyUs.tsx
-    HowItWorks.tsx
+    WhyUs/
+      WhyUs.tsx
+      WhyUs.constants.tsx
+    VehicleFleet/
+      VehicleFleet.tsx
+      VehicleFleet.constants.tsx
+    HowItWorks/
+      HowItWorks.tsx
+      HowItWorks.constants.tsx
     Pricing.tsx
-    FAQ.tsx
+    FAQ/
+      FAQ.tsx
+      FAQ.constants.tsx
     ContactForm.tsx
   layout.tsx
   page.tsx
   globals.css
 public/
   fonts/
+  images/
 ```
 
 ## 🎨 Design System
@@ -74,19 +97,29 @@ npm install
 
    If fonts are not available, the site will fall back to system fonts. You can also use Google Fonts by updating `globals.css`.
 
-3. Run the development server:
+3. Set up environment variables:
+
+Create a `.env.local` file in the root directory:
+
+```bash
+RESEND_API_KEY=your_resend_api_key_here
+```
+
+Get your API key from [Resend](https://resend.com). The contact form uses Resend to send emails.
+
+4. Run the development server:
 
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📝 Notes
 
-- Placeholder images are used from `placehold.co`. Replace with real images when available.
-- Contact form is currently a client-side demo. Connect to your backend/email service.
-- WhatsApp link uses a placeholder number. Update with your actual number.
+- Contact form is connected to Resend API for email delivery. Make sure to set up your `RESEND_API_KEY` environment variable.
+- The contact form sends emails to `info@lillos.net` (configured in `/app/api/contact/route.ts`).
+- WhatsApp link is configured in the ContactForm component.
 - All content is in Italian as per requirements.
 
 ## 🎯 Features
@@ -95,11 +128,13 @@ npm run dev
 - ✅ Sticky navigation with mobile menu
 - ✅ Smooth scrolling
 - ✅ Interactive FAQ accordion
-- ✅ Contact form with validation
+- ✅ Contact form with validation and email integration (Resend)
 - ✅ Carousel for use cases (mobile)
+- ✅ Vehicle fleet showcase
 - ✅ Neobrutalist design elements
 - ✅ Server Components by default
 - ✅ Client Components only where needed
+- ✅ Framer Motion animations
 
 ## 📦 Build
 
