@@ -9,6 +9,7 @@ export default function SocialProof() {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const scrollPositionRef = useRef(0)
   const animationFrameRef = useRef<number>()
+  const directionRef = useRef<'forward' | 'backward'>('forward')
 
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current
@@ -20,11 +21,23 @@ export default function SocialProof() {
     const animate = () => {
       if (!scrollContainer) return
 
-      scrollPositionRef.current += 0.2 // Adjust speed here (lower = slower)
-      
-      // Reset position when we've scrolled through one set of logos
-      if (scrollPositionRef.current >= scrollWidth) {
-        scrollPositionRef.current = 0
+      const speed = 1
+      // Move forward or backward based on direction
+      if (directionRef.current === 'forward') {
+        scrollPositionRef.current += speed // Adjust speed here (lower = slower)
+        
+        // Reverse direction when we've scrolled through one set of logos
+        if (scrollPositionRef.current >= scrollWidth) {
+          directionRef.current = 'backward'
+        }
+      } else {
+        scrollPositionRef.current -= speed // Adjust speed here (lower = slower)
+        
+        // Reverse direction when we've reached the beginning
+        if (scrollPositionRef.current <= 0) {
+          scrollPositionRef.current = 0
+          directionRef.current = 'forward'
+        }
       }
 
       scrollContainer.scrollLeft = scrollPositionRef.current

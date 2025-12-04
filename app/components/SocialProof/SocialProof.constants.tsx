@@ -11,5 +11,7 @@ export const logos = [
   { name: 'Radio Deejay', image: '/images/brand_10.png' },
   { name: 'Amazon', image: '/images/brand_11.png' },
   { name: 'Audi', image: '/images/brand_12.png' },
+  { name: 'Spotify', image: '/images/brand_13.png' },
+  { name: 'Siemens', image: '/images/brand_14.png' },
 ]
 
